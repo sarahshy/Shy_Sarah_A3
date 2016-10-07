@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-Do List App</title>
+        <link  rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="myscript.js"></script>
+    </head>
+
+    <body>
+        <h1>My To-do List</h1>
+        <ul id = "taskList">
+            <li><input type = "checkbox">Buy milk <button class = "delete" onclick = "removeTask(this)">x</button></li>
+            <li><input type = "checkbox">Pick up dry cleaning <button  class = "delete" onclick = "removeTask(this)">x</button></li>
+            <li><input type = "checkbox">Return shoes to Nordstrom <button  class = "delete" onclick = "removeTask(this)">x</button></li>
+        </ul>
+        <textarea id="newTaskText" onkeyup="if(event.keyCode==13) addNewTask();">Add a new task</textarea>
+        <button id = "addTask" class = "button" onclick = "addNewTask()">+</button>
+
+    </body>
+</html>

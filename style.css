@@ -1,0 +1,13 @@
+.delete {
+    background: lightgrey;
+    color: red;
+}
+
+input[type = checkbox]:checked + label{
+    /*text-decoration: line-through;*/
+    color: red;
+}
+
+ul li.checked + label{
+    text-decoration: line-through;
+}
