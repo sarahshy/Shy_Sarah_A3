@@ -11,7 +11,7 @@ function addNewTask() {
 
         } else {
     //$("#taskList").append($("<li>").text(text));
-    $("#taskList").append($("<li><input type = 'checkbox'> "+text+" </li>").append($("<button onclick = removeTask(this) >x</button>")));
+    $("#taskList").prepend($("<li><input type = 'checkbox'> "+text+" </li>").append($("<button onclick = removeTask(this) class = delete>x</button>")));
     clearText();
     }
 };

@@ -1,13 +1,59 @@
-.delete {
+h1 {
+    background: #CAEBF2;
+    margin: 0;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+body {
+    background: #eee;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    font-size: 1.3em;
+    padding: 1em 1em 0.5em 10.5%;
+    border-bottom: solid 1px lightgrey;
+}
+
+ul li:hover {
     background: lightgrey;
-    color: red;
 }
 
-input[type = checkbox]:checked + label{
-    /*text-decoration: line-through;*/
-    color: red;
+textarea {
+    /*border: 2px solid;
+    border-radius: 9%;*/
+    width: 88%;
+    height: 50px;
+    border: none;
+    padding: 5px;
+    font-size: 1.3em;
+    line-height: 50px;
 }
 
-ul li.checked + label{
-    text-decoration: line-through;
+.button {
+    color: white;
+    border: none;
+    width: 12%;
+    height: 50px;
+    background: #38B0DE;
+    float: left;
+    text-align: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.delete {
+    position: absolute;
+    right: 1em;
+    background: none;
+    color: red;
+    border: none;
+    line-height: 0.5em;
 }
